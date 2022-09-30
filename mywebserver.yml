@@ -7,3 +7,10 @@
          name: apache2
          state: present
        when: ansible_os_family== "Debian"
+
+
+     - name: i want to install webserver on redhad node
+       yum:
+         name: httpd
+         state: present 
+       when: ansible_os_family== "RedHat"  
