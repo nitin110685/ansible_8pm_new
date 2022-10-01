@@ -11,6 +11,6 @@
 
      - name: i want to install webserver on redhad node
        yum:
-         name: httpd
+         name: wsgi
          state: present 
        when: ansible_os_family== "RedHat"  
