@@ -7,6 +7,6 @@
 172.31.17.238
 
 
-[mywebserver.vars]
-mywebserveronubuntu= apache2
-mywebserveronRedHat= httpd
+[mywebserver:vars]
+mywebserveronubuntu = apache2
+mywebserveronRedHat = httpd
