@@ -13,7 +13,7 @@
       - name: i want to install java jdk8 on ubuntu
         apt: 
           name: "{{item}}"
-        state: present 
+          state: present 
         when: ansible_os_family== "Debian"
         loop:
         - "{{myvar1}}"
