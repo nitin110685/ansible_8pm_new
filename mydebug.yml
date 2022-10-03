@@ -9,3 +9,15 @@
     - name: i want display fisrttask result 
       debug:
         msg: "{{myResult}}"
+
+    - name: i want install git 
+      apt:
+        name: git
+        state: present
+      wnen: myResult.stderr==""
+
+    - name: i want install tree 
+      apt:
+        name: git
+        state: present
+      wnen: myResult.stderr!=""
