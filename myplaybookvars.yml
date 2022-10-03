@@ -9,3 +9,15 @@
       - name: i want display myvar1
         debug: 
            msg : "{{myvar1}}"
+
+      - name: i want to install java jdk8 on ubuntu
+        apt: 
+          name: "{{item}}"
+        state: present 
+        when: ansible_os_family== "Debian"
+        loop:
+        - "{{myvar1}}"
+        - "{{myvar2}}"
+        - "{{myvar3}}"
+
+    
