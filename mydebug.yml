@@ -14,10 +14,10 @@
       apt:
         name: git
         state: present
-      when: myResult.stderr ==""
+      when: myResult.stderr !=""
 
     - name: i want install tree 
       apt:
         name: git
         state: present
-      when: myResult.stderr !=""
+      when: myResult.stderr ==""
