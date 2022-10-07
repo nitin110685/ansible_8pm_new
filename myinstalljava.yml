@@ -5,13 +5,13 @@
     - name: i want to install java open jdk 8 on ubuntu node
       apt:
         name: "{{myjavajdkonubuntu}}"
-        state: present 
+        state: absent 
       when: ansible_os_family== "Debian"
 
 
     - name: i want to install java open jdk 8 0n Redhat node
       yum:
         name: "{{myjavajdkonRedhat}}"
-        state: present
+        state: absent
       when: ansible_os_family== "RedHat"
 
