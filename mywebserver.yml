@@ -11,7 +11,7 @@
      - name : i want to start/stop  webserever on ubuntu node
        service:
          name: "{{mywebserveronubuntu}}"
-         state: started
+         state: stopped
        when: ansible_os_family== "Debian"
 
 
@@ -24,5 +24,5 @@
      - name: i want to install webserver on redhat node
        service:
          name: "{{mywebserveronRedHat}}"
-         state: started 
+         state: stopped 
        when: ansible_os_family== "RedHat"
