@@ -1,16 +1,19 @@
-[mywebserver]
+[mywebservernodes]
+172.31.17.239 
 172.31.10.94
-172.31.17.239
+172.31.26.98      
+       
+        
+        
+         
 
-[myDB]
+[myDBnodes]
 172.31.10.95
 172.31.17.238
+172.31.17.239
+172.31.17.237
 
 
-[mywebserver:vars]
-mywebserveronubuntu= apache2
-mywebserveronRedHat= httpd
-myjavajdkonubuntu= openjdk-8-jre
-myjavajdkonRedhat= java-1.8.0-openjdk
+
 
 

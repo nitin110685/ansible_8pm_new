@@ -1,5 +1,5 @@
 --- 
-- hosts: mywebserver
+- hosts: mywebservernodes
   become: yes
   tasks:
      - name : i want to install webserever on ubuntu node
