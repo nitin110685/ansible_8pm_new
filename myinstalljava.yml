@@ -1,5 +1,5 @@
 --- 
-- hosts: mywebserver
+- hosts: mywebservernodes
   become: yes 
   tasks:
     - name: i want to install java open jdk 8 on ubuntu node
