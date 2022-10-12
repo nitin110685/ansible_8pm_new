@@ -16,14 +16,14 @@
       apt:
         name: tree 
         state: present 
-      when: myresult.stderr == ""
+      when: myresult.stderr != ""
 
 
     - name: i want to install wget 
       apt:
         name: wget 
         state: present 
-      when: myresult.stderr != ""
+      when: myresult.stderr == ""
 
 
     
