@@ -1,5 +1,5 @@
 --- 
-- hosts: 172.31.10.94
+- hosts: mywebservernodes
   become: yes
   vars:
      myvar1: tree
