@@ -1,5 +1,5 @@
 --- 
-- hosts: all
+- hosts: mywebservernodes
   become: yes
   vars:
   myvar1: tree
