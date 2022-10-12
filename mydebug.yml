@@ -3,7 +3,7 @@
   become: yes
   tasks:
     - name: i want to run linux command
-      command: hostname -f
+      command: hostame -f
       register: myresult
 
 
