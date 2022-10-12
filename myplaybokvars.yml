@@ -2,9 +2,9 @@
 - hosts: mywebservernodes
   become: yes
   vars:
-  myvar1: tree
-  myvar2: wget
-  myvar3: git
+     myvar1: tree
+     myvar2: wget
+     myvar3: git
   tasks:
      - name : i want display varaible value
        debug:
