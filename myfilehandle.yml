@@ -8,5 +8,10 @@
        apt:
           name: apache2
           state: present
+
+     - name: i want to copy file on node side 
+       template:
+          src: myindex.j2
+          dest: /var/www/html/index.html
   
  
