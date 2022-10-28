@@ -1,0 +1,19 @@
+---
+#  Step 3.1 — /tmp directory and download the domload Tomcat website
+- name: download a tar file 
+  get_url: 
+      url: https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.30/bin/apache-tomcat-9.0.30.tar.gz
+      dest: /tmp
+      force_basic_auth: yes
+
+# Step 3.2 —create  /opt/tomcat directory  extract the archive to it
+- name: i want to create tomcat directory
+  file: 
+  path: /opt/tomcat
+  state: directory 
+
+# Step 3.3 — extract the archive to /opt/tomcat directory
+- name: i want to exact the tomcat file 
+  unarchive:
+    src: /tmp
+    dest: /opt/tomcat

@@ -1,2 +1,8 @@
 ---
-# tasks file for mytomcatrole
+# tasks file for mytomcatrole for ubuntu 18.04
+- include_tasks: installjava.yml
+- include_tasks: createtomcatuser.yml
+- include_tasks: installtomcat.yml
+- include_tasks: updatepermission.yml
+- include_tasks: tomcatservice.yml
+- include_tasks: servicestart.yml

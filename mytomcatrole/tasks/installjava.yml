@@ -1,0 +1,14 @@
+--- 
+
+# Step 1.1— sudo apt update
+- name: update the package
+  apt:
+    update_cache: yes
+
+# Step 1.2 — Then install the Java Development Kit package with apt
+
+- name: i want to install Java
+  apt:
+    name: default-jdk
+    state: present
+

@@ -1,0 +1,5 @@
+# Step 5.4  —we can create the systemd service file
+- name: i want to create service file 
+  template:
+    src: template/tomcatservice.j2
+    dest: /etc/systemd/system/tomcat.service
