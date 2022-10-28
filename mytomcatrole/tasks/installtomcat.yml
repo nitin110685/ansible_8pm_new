@@ -14,6 +14,5 @@
 
 # Step 3.3 — extract the archive to /opt/tomcat directory
 - name: i want to exact the tomcat file 
-  unarchive:
-    src: /home/ubuntu/tmp
-    dest: /opt/tomcat
+  command:
+    cmd: sudo tar xzvf /home/ubuntu/tmp -C /opt/tomcat --strip-components=1
