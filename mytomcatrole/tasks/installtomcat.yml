@@ -9,8 +9,8 @@
 # Step 3.2 —create  /opt/tomcat directory  extract the archive to it
 - name: i want to create tomcat directory
   file: 
-  path: /opt/tomcat
-  state: directory 
+   path: /opt/tomcat
+   state: directory 
 
 # Step 3.3 — extract the archive to /opt/tomcat directory
 - name: i want to exact the tomcat file 
