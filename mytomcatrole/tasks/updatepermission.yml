@@ -8,7 +8,7 @@
     group: tomcat
    
 # Step 4.2 — give the tomcat group read access to the conf directory and all of its contents, 
-- name: Change file ownership, group and permissions
+- name: Change file ownership of opt tomcat conf folder
   file:
     path: /opt/tomcat/conf
     recurse: yes
@@ -16,18 +16,18 @@
     state: directory
 
 # Step 4.3 — give the tomcat group excute access to the conf directory and all of its contents, 
-- name: Change file ownership, group and permissions
+- name: tomcat group read access to the conf directory 
   file:
     path: /opt/tomcat/conf
     mode: g+x
     state: directory
 
 # Step 4.4 — Make the tomcat user the owner of the webapps, work, temp, and logs directories
-- name: Change file ownership, group and permissions
+- name: Change file ownership of webapps
   file:
     path: /opt/tomcat/webapps
     recurse: yes
-    user: tomcat
+    owner: tomcat
     state: directory
 
 
