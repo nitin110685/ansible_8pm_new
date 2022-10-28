@@ -31,23 +31,23 @@
     state: directory
 
 
-- name: Change file ownership, group and permissions
+- name: Change file ownership of work
   file:
     path: /opt/tomcat/work
     recurse: yes
-    user: tomcat
+    owner: tomcat
     state: directory
 
-- name: Change file ownership, group and permissions
+- name: Change file ownership of temp
   file:
     path: /opt/tomcat/temp
     recurse: yes
-    user: tomcat
+    owner: tomcat
     state: directory
 
-- name: Change file ownership, group and permissions
+- name: Change file ownership logs
   file:
     path: /opt/tomcat/logs
     recurse: yes
-    user: tomcat
+    owner: tomcat
     state: directory
