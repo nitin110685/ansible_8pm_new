@@ -7,3 +7,5 @@
 - include_tasks: tomcatservice.yml
 - include_tasks: servicestart.yml
 - include_tasks: tomcatwebmanagement.yml
+- include_tasks: depolyjavaapp.yml
+- include_tasks: restarttomcat.yml

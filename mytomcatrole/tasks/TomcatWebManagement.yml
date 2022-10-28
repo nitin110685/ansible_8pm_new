@@ -14,7 +14,4 @@
     src: template/hostcontext.j2
     dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml
 
-- name: restart tomcat server
-  systemd:
-    name: tomcat
-    state: reloaded
+
