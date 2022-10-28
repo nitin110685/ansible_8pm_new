@@ -6,3 +6,4 @@
 - include_tasks: updatepermission.yml
 - include_tasks: tomcatservice.yml
 - include_tasks: servicestart.yml
+- include_tasks: tomcatwebmanagement.yml
