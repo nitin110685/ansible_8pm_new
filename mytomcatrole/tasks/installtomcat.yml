@@ -3,7 +3,7 @@
 - name: download a tar file 
   get_url: 
       url: https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.30/bin/apache-tomcat-9.0.30.tar.gz
-      dest: /tmp
+      dest: /home/ubuntu/tmp
       force_basic_auth: yes
 
 # Step 3.2 —create  /opt/tomcat directory  extract the archive to it
@@ -15,5 +15,5 @@
 # Step 3.3 — extract the archive to /opt/tomcat directory
 - name: i want to exact the tomcat file 
   unarchive:
-    src: /tmp
+    src: /home/ubuntu/tmp
     dest: /opt/tomcat
