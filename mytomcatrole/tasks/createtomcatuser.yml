@@ -9,7 +9,8 @@
 
 - name: i want create tomcat user 
   user:
+   name: tomcat
    shell: /bin/false
    group: tomcat 
    home: /opt/tomcat
-   state:
+   state: present
